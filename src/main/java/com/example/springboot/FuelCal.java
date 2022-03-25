@@ -1,17 +1,27 @@
 package com.example.springboot;
 
 public class FuelCal {
+	private long id;
 	private int people;
 	private double distance;
 	private double consumption;
 	private double gasPrice;
 
-	public FuelCal(int people, double distance, double consumption, double gasPrice) {
+	public FuelCal(long id,int people, double distance, double consumption, double gasPrice) {
 		super();
+		this.id = id;
 		this.people = people;
 		this.distance = distance;
 		this.consumption = consumption;
 		this.gasPrice = gasPrice;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public int getPeople() {
