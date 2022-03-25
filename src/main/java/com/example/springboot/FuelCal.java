@@ -7,6 +7,10 @@ public class FuelCal {
 	private double consumption;
 	private double gasPrice;
 
+	public FuelCal() {
+		super();
+	}
+
 	public FuelCal(long id,int people, double distance, double consumption, double gasPrice) {
 		super();
 		this.id = id;
